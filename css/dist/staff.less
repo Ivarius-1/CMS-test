@@ -1,0 +1,515 @@
+// сотрудники
+
+.b-staff{
+	width: 900px;
+	float: left;
+	margin: 0px;
+	padding: 0px 0px 120px;
+	position: relative;
+}
+
+.b-leadership_slider-bg{
+	width: 865px;
+	height: auto;
+	float: left;
+	margin: 30px 0px 20px 20px;
+	padding: 0px 0px 5px;
+	position: relative;
+	border: 1px dashed #dddddd;
+	background: rgb(244,244,244);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y0ZjRmNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(244,244,244,1) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(244,244,244,1)), color-stop(100%,rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(top,  rgba(244,244,244,1) 0%,rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(top,  rgba(244,244,244,1) 0%,rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(244,244,244,1) 0%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(to bottom,  rgba(244,244,244,1) 0%,rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#ffffff',GradientType=0 );
+
+	&:before{
+		content: "";
+		position: absolute;
+		height: 139px;
+		width: 13px;
+		top: 3px;
+		right: -14px;
+		background: url('@{images}/shadows/shadow-top_right.png') no-repeat;
+	}
+	&:after{
+		content: "";
+		position: absolute;
+		height: 9px;
+		width: 816px;
+		bottom: -10px;
+		left: 25px;
+		background: url('@{images}/shadows/shadow-staff_sectors-leadership_bottom.png') no-repeat;
+	}
+
+	.b-leadership_slider-headline{
+		width: 800px;
+		float: left;
+		height: 30px;
+		margin: 17px 0px 0px 40px;
+		padding: 0px;
+		position: relative;
+
+		h1{
+			margin: 0px;
+			padding: 0px;
+			font-family: @font;
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 30px;
+			color: #000000;
+		}
+	}
+
+	.b-leadership_slider{
+		width: 820px;
+		float: left;
+		margin: 12px 0px 0px 15px;
+		padding: 0px;
+		height: auto;
+		position: relative;
+
+		.b-leadership_slider-slide{
+			width: 800px;
+			float: left;
+			margin: 0px;
+			padding: 0px 15px 15px 25px;
+			min-height: 280px;
+			position: relative;
+
+			&>.b-image{
+				width: 180px;
+				float: left;
+				height: auto;
+				margin: 0px;
+				padding: 0px;
+				position: relative;
+
+				img{
+					float: left;
+					width: 180px;
+					height: auto;
+					margin: 0px;
+					padding: 0px;
+					position: relative;
+					border: 0px;
+				}
+			}
+
+			.b-slide_content{
+				width: 570px;
+				float: right;
+				height: auto;
+				margin: 0px 10px 0px 0px;
+				padding: 0px 0px 0px;
+				position: relative;
+
+				&>h1{
+					width: 570px;
+					float: left;
+					height: 30px;
+					position: relative;
+					margin: 5px 0px 0px;
+					padding: 0px;
+					font-family: @font;
+					font-size: 24px;
+					font-weight: 700;
+					line-height: 30px;
+					color: #007bc6;
+				}
+				&>h2{
+					width: 570px;
+					float: left;
+					height: 18px;
+					margin: 5px 0px 0px;
+					padding: 0px;
+					position: relative;
+					font-family: @font;
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 18px;
+					color: #000000;
+				}
+				&>.b-text{
+					width: 570px;
+					float: left;
+					height: auto;
+					margin: 15px 0px 0px;
+					padding: 0px;
+					position: relative;
+					font-family: @font;
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 18px;
+					color: #000000;
+
+					p{
+						margin: 5px 0px;
+						padding: 0px;
+						position: relative;
+					}
+				}
+
+				&>.b-contacts_block{
+					width: 570px;
+					float: left;
+					height: auto;
+					margin: 15px 0px 0px;
+					padding: 0px;
+					position: relative;
+
+					.b-line{
+						width: 570px;
+						float: left;
+						height: auto;
+						margin: 2px 0px 0px;
+						padding: 0px;
+						font-family: @font;
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 20px;
+						color: #000000;
+
+						span.b-icons_contacts{
+							width: 20px;
+							height: 20px;
+							float: left;
+							position: relative;
+							margin: 0px 10px 0px 0px;
+							padding: 0px;
+							background: url('@{images}/icons_staff_contacts.png') no-repeat;
+
+							&.phone{
+								background-position: 0px 0px;
+							}
+							&.mobile{
+								background-position: 0px -20px;
+							}
+							&.mail{
+								background-position: 0px -40px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.b-sectors_list{
+	width: 920px;
+	float: left;
+	margin: 5px 0px 0px;
+	padding: 0px;
+	position: relative;
+}
+
+.b-sector{
+	width: 260px;
+	float: left;
+	height: 285px;
+	margin: 25px 20px;
+	padding: 0px;
+	position: relative;
+	border: 1px dashed #dddddd;
+
+	&:before{
+		content: "";
+		position: absolute;
+		height: 139px;
+		width: 13px;
+		top: 3px;
+		right: -14px;
+		background: url('@{images}/shadows/shadow-top_right.png') no-repeat;
+	}
+	&:after{
+		content: "";
+		position: absolute;
+		height: 9px;
+		width: 255px;
+		bottom: -10px;
+		left: 2px;
+		background: url('@{images}/shadows/shadow-staff_sectors-sectors_bottom.png') no-repeat;
+	}
+
+	&>.b-sector_name{
+		width: 220px;
+		float: left;
+		margin: 20px 0px 0px 20px;
+		padding: 0px;
+		height: auto;
+		position: relative;
+		font-family: @font;
+		font-size: 15px;
+		font-weight: 700;
+		line-height: 20px;
+		color: #000000;
+		text-align: center;
+	}
+
+	&>.b-sector_content{
+		width: 260px;
+		float: left;
+		margin: 0px;
+		padding: 0px;
+		position: relative;
+		height: auto;
+
+		&>.b-image{
+			width: 90px;
+			float: left;
+			height: 128px;
+			margin: 20px 0px 0px 20px;
+			padding: 0px;
+			position: relative;
+
+			img{
+				width: 90px;
+				float: left;
+				position: relative;
+				padding: 0px;
+				margin: 0px;
+				border: 0px;
+			}
+		}
+
+		&>.b-right{
+			width: 130px;
+			float: right;
+			margin: 20px 5px 0px 0px;
+			padding: 0px;
+			height: auto;
+			position: relative;
+
+			h2.name{
+				width: 130px;
+				float: left;
+				margin: 0px 0px 0px 0px;
+				padding: 0px;
+				height: auto;
+				position: relative;
+				font-family: @font;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 22px;
+				color: #007bc6;
+				text-align: left;
+			}
+			h3{
+				width: 130px;
+				float: left;
+				margin: 5px 0px 0px 0px;
+				padding: 0px;
+				height: auto;
+				position: relative;
+				font-family: @font;
+				font-size: 12px;
+				font-weight: 400;
+				line-height: 20px;
+				color: #000000;
+				text-align: left;
+			}
+		}
+	}
+}
+
+.b-sector_page{
+	width: 885px;
+	float: left;
+	height: auto;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+
+	ul.b_sector_page-categorys{
+		width: 860px;
+		float: left;
+		height: auto;
+		min-height: 30px;
+		margin: 0px 0px 0px 10px;
+		padding: 0px;
+
+		li{
+			float: left;
+			overflow: hidden;
+			width: auto;
+			height: auto;
+			margin: 0px 10px;
+			padding: 5px 5px;
+			border: 1px solid #fff;
+			cursor: pointer;
+			font-family: Arial, sans-serif;
+			font-size: 11px;
+			font-weight: 400;
+			line-height: 16px;
+			color: #acacac;
+			text-align: center;
+			text-decoration: underline;
+
+			&.current,
+			&.current:hover{
+				color: #000000;
+				text-decoration: none;
+				border: 1px dashed #007bc6;
+				cursor: default;
+			}
+			&:hover{
+				color: #007bc6;
+			}
+		}
+	}
+
+	.b-sector_page-groups {
+		width: 885px;
+		float: left;
+		height: auto;
+		position: relative;
+		margin: 0px;
+		padding: 0px;
+
+		.box{
+			width: 885px;
+			float: left;
+			height: auto;
+			position: relative;
+			margin: 0px;
+			padding: 0px;
+
+			.b-sector_page-group {
+				width: 865px;
+				height: auto;
+				float: left;
+				margin: 15px 0px 20px 20px;
+				padding: 0px 0px 5px;
+				position: relative;
+				border: 1px dashed #dddddd;
+				background: #fff;
+
+				&:before{
+					content: "";
+					position: absolute;
+					height: 139px;
+					width: 13px;
+					top: 3px;
+					right: -14px;
+					background: url('@{images}/shadows/shadow-top_right.png') no-repeat;
+				}
+				&:after{
+					content: "";
+					position: absolute;
+					height: 9px;
+					width: 816px;
+					bottom: -10px;
+					left: 25px;
+					background: url('@{images}/shadows/shadow-staff_sectors-leadership_bottom.png') no-repeat;
+				}
+				
+				.b-headline {
+					width: 800px;
+					float: left;
+					height: auto;
+					margin: 15px 0px 0px 40px;
+					padding: 0px;
+					position: relative;
+
+					h2{
+						margin: 0px;
+						padding: 0px;
+						font-family: @font;
+						font-size: 14px;
+						font-weight: 700;
+						line-height: 20px;
+						color: #000000;
+					}
+				}
+				
+				.b-maven {
+					width: 390px;
+					float: left;
+					min-height:135px;
+					height: auto;
+					margin: 15px 0px 17px 40px;
+					position: relative;
+					
+					&>img{
+						float: left;
+						width: 90px;
+						margin: 0px;
+						padding: 0px;
+						height: auto;
+						position: relative;
+					}
+					
+					.b-right{
+						float: right;
+						width: 285px;
+						height: auto;
+						margin: 0px;
+						padding: 0px;
+						position: relative;
+
+						h3{
+							width: 285px;
+							height: auto;
+							margin: 0px;
+							padding: 0px;
+							font-family: @font;
+							font-size: 14px;
+							font-weight: 400;
+							line-height: 20px;
+							color: #007bc6;
+						}
+
+						&>.b-contacts_block{
+							width: 285px;
+							float: left;
+							height: auto;
+							margin: 5px 0px 0px;
+							padding: 0px;
+							position: relative;
+
+							.b-line{
+								width: 285px;
+								float: left;
+								height: auto;
+								margin: 2px 0px 0px;
+								padding: 0px;
+								font-family: @font;
+								font-size: 14px;
+								font-weight: 400;
+								line-height: 20px;
+								color: #000000;
+
+								span.b-icons_contacts{
+									width: 20px;
+									height: 20px;
+									float: left;
+									position: relative;
+									margin: 0px 10px 0px 0px;
+									padding: 0px;
+									background: url('@{images}/icons_staff_contacts.png') no-repeat;
+
+									&.phone{
+										background-position: 0px 0px;
+									}
+									&.mobile{
+										background-position: 0px -20px;
+									}
+									&.mail{
+										background-position: 0px -40px;
+									}
+									&.icq{
+										background-position: 0px -60px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

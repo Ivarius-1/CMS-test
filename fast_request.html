@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru-ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Эстив</title>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="MobileOptimized" content="1200"/>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="icon" href="images/favicon.ico" />
+
+	<!--[if lte IE 8]><script src="/js/css3-mediaqueries.js"></script><![endif]-->
+	<!--[if gte IE 9]><style type="text/css">.gradient {filter: none;}</style><![endif]-->
+
+	<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+	<!--[if lte IE 8]><link href="/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 9]><link href="/css/ie9.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+	<script type="text/javascript" src="/js/jquery.min.js"></script>
+
+	<!--[if lte IE 9]><script src="/js/ie.js"></script><![endif]-->
+
+	<script type="text/javascript" src="/js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.placeholder.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('input, textarea').placeholder();
+			$('.b-input-phone').mask('+7 (999) 999-9999');
+			$('.b-input_phone-country_code, .b-fast_request-input_country_code').mask('+9');
+			$('.b-input_phone-town_code, .b-fast_request-input_town_code').mask('999');
+			$('.b-input_phone-number, .b-fast_request-input_number').mask('999-99-99');
+			$('#datepicker').mask('99.99.9999');
+		});
+	</script>
+
+	<!-- form styler -->
+	<link href="/js/formstyler/jquery.formstyler.css" rel="stylesheet" type="text/css" />
+	<script src="js/formstyler/jquery.formstyler.min.js"></script>
+	<script>  
+		(function($) {
+		    $(function() {
+		        $('select, input[type=file], input[type=checkbox]').styler({
+		            fileBrowse: "<span></span>Прикрепить"
+		        });
+		    });
+		})(jQuery)
+	</script>
+
+</head>
+<body>
+	<section>
+
+		<div class="b-right_column">
+			
+			<div class="b-left_column">
+				<div class="b-right_bottom_list"></div>
+				<div class="b-copyright">© ЭСТИВ.2008–2014</div>
+
+				<header>
+					<a href="#" class="b-header-logo">
+						<img src="/images/estiw-logo.png" alt="" class="b-header-logo_img">
+					</a>
+					<div class="b-header_phone">
+						<span>Бесплатный звонок по РФ</span>
+						<a href="tel:8 (800) 234 0 234">8 (800) 234 0 234</a>
+					</div>
+					<div class="b-header_location">
+						<a href="#b-town_choose" class="b-towns fancybox"><span class="b-icon_time"></span><div class="b-text">Владивосток <span class="b-icon_down"></span></div></a>
+						<div class="b-time">12:31</div>
+					</div>
+					<div class="b-header_contacts">
+						<a href="#b-callback-popup" class="b-callback_link fancybox">Заказать звонок</a>
+						<a href="" class="b-contacts_link">Контактная информация</a>
+					</div>
+
+					<nav class="b-header_menu gradient">
+						<div class="b-header_menu-image"></div>
+						<ul class="b-level_one">
+							<li class="first">
+								<h1>О компании</h1>
+								<ul>
+									<li><a href="">Презентация</a></li>
+									<li><a href="/">Структура</a></li>
+									<li><a href="/">Документы</a></li>
+									<li><a href="/">Реквизиты</a></li>
+									<li><a href="/">Отзывы</a></li>
+									<li><a href="/">Вакансии</a></li>
+								</ul>
+							</li>
+							<li class="second">
+								<h1>Услуги</h1>
+								<ul>
+									<li class="b-list_headline first"><h2>Организуем перевозки</h2></li>
+									<li><a href="/">Морские</a></li>
+									<li><a href="/">Железнодорожные</a></li>
+									<li><a href="/">Автомобильные</a></li>
+									<li><a href="/">Авиаперевозки</a></li>
+									<li><a href="/">Мультимодальные</a></li>
+									<li class="b-list_headline"><h2>Перевозим грузы</h2></li>
+									<li><a href="/">Контейнерные (FCL)</a></li>
+									<li><a href="/">Сборные (LCL)</a></li>
+									<li><a href="/">Негабаритные</a></li>
+									<li><a href="/">Спецтехнику</a></li>
+									<li><a href="/">Опасные грузы</a></li>
+									<li class="b-list_headline"><h2>Предоставляем услуги</h2></li>
+									<li><a href="/">Таможенное оформление</a></li>
+									<li><a href="/">Складская логистика</a></li>
+									<li><a href="/">Сертификация товаров</a></li>
+									<li><a href="/">Страхование грузов</a></li>
+									<li><a href="/">Юридическая поддержка и консультирование</a></li>
+									<li><a href="/">Сопутствующие услуги</a></li>
+								</ul>
+							</li>
+							<li class="third">
+								<h1>Партнерам</h1>
+								<ul>
+									<li><a href="/">Поставщикам услуг</a></li>
+									<li><a href="/">Производителям товаров</a></li>
+									<li><a href="/">Торговым компаниям</a></li>
+									<li><a href="/">Фрилансерам</a></li>
+									<li><a href="/">Агентам</a></li>
+									<li><a href="/">Информация для СМИ</a></li>
+									<li><a href="/">ЭОД</a></li>
+								</ul>
+							</li>
+							<li class="fourth">
+								<h1>Новости</h1>
+								<ul>
+									<li><a href="/">Все новости</a></li>
+									<li><a href="/">О компании</a></li>
+									<li><a href="/">Таможня</a></li>
+									<li><a href="/">Порты</a></li>
+									<li><a href="/">Море</a></li>
+									<li><a href="/">Железная дорога</a></li>
+									<li><a href="/">Авто</a></li>
+									<li><a href="/">Авиа</a></li>
+									<li><a href="/">Ассоциация АРЭ</a></li>
+									<li><a href="/">Общество и Политика</a></li>
+									<li><a href="/">Контейнер. перевозки</a></li>
+								</ul>
+							</li>
+							<li class="fifth">
+								<h1>Справочник</h1>
+								<ul>
+									<li><a href="/">Законодательство</a></li>
+									<li><a href="/">Incoterms</a></li>
+									<li><a href="/">UCP-600</a></li>
+									<li><a href="/">Товарная номенклатура</a></li>
+									<li><a href="/">Транспорт. оборудование</a></li>
+									<li><a href="/">Опасные грузы</a></li>
+									<li><a href="/">Проектные перевозки</a></li>
+									<li><a href="/">Единицы измерения</a></li>
+									<li><a href="/">Термины</a></li>
+									<li><a href="/">Транспортные пункты</a></li>
+									<li><a href="/">Динамика курсов валют</a></li>
+									<a href="/" class="b-btn b-btn-default b-btn-header_menu shadow gradient"><span class="b-glyphicon b-glyphicon-question"></span>Задать вопрос</a>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+				<div class="b-content">
+					<div class="b-bread_links">
+						<a href="#" class="b-bread_links b-link b-link_gray">Быстрый запрос</a>
+					</div>
+					<div class="b-headline_main">
+						<h1>Быстрый запрос</h1>
+					</div>
+					
+					<div class="b-fast_request-page">
+						<div class="b-fast_request">
+
+							<form action="">
+								
+								<!-- Информация о компании (начало) -->
+								<div class="b-left_block">
+									<h1>Общая информация о компании</h1>
+									<div class="b-fast_request-line">
+										<label for="" class="b-fast_request-label">Как к Вам обратиться?<span>*</span></label>
+										<input class="b-fast_request-input_text" type="text" placeholder="ФИО">
+									</div>
+									<div class="b-fast_request-line">
+										<label for="" class="b-fast_request-label">Название организации</label>
+										<input class="b-fast_request-input_text" type="text">
+									</div>
+									<div class="b-fast_request-line">
+										<label for="" class="b-fast_request-label">Страна</label>
+										<select class="width-245">
+											<option value="">Россия</option>
+											<option value="">США</option>
+											<option value="">Китай</option>
+										</select>
+									</div>
+									<div class="b-fast_request-line">
+										<label for="" class="b-fast_request-label">Город</label>
+										<select class="width-245">
+											<option value="">Выберите город</option>
+											<option value="">Владивосток</option>
+											<option value="">Москва</option>
+										</select>
+									</div>
+									<div class="b-fast_request-line">
+										<label for="" class="b-fast_request-label">Телефон<span>*</span></label>
+										<div class="b-input_phone">
+											<input class="b-fast_request-input_country_code" type="text" placeholder="+7">
+											<input class="b-fast_request-input_town_code" type="text" id="b-callback-town_code" placeholder="_ _ _ ">
+											<input class="b-fast_request-input_number error" type="text" placeholder="_ _ _ -_ _ -_ _ ">
+										</div>
+									</div>
+									<div class="b-fast_request-line">
+										<label for="" class="b-fast_request-label">E-mail<span>*</span></label>
+										<input class="b-fast_request-input_text" type="text" placeholder="Ваша электронная почта">
+									</div>
+
+									<div class="b-left_block-info">Вы можете воспользоваться сервисом<br/> для расчета стоимости перевозки:<br/><a href="#" class="b-link b-link_blue">Калькулятор cборных грузов</a></div>
+								</div>
+								<!-- Информация о компании (конец) -->
+
+								
+								<!-- Информация о грузе (начало) -->
+								<div class="b-right_block">
+									<h1>Информация о грузе</h1>
+									<div class="b-fast_request-line_big">
+										<div class="b-fast_request-line_mini">
+											<label for="" class="b-fast_request-label">Пункт отправления <span>*</span></label>
+											<select class="width-200">
+												<option value="">Выберите город</option>
+												<option value="">США</option>
+												<option value="">Китай</option>
+											</select>
+										</div>
+										<span class="b-from_left_to_right">
+											<span class="b-icon"></span>
+										</span>
+										<div class="b-fast_request-line_mini">
+											<label for="" class="b-fast_request-label">Пункт назначения <span>*</span></label>
+											<select class="width-200">
+												<option value="">Выберите город</option>
+												<option value="">Владивосток</option>
+												<option value="">Москва</option>
+											</select>
+										</div>
+									</div>
+									<div class="b-fast_request-line_big">
+										<label for="" class="b-fast_request-label">Наименование груза<span>*</span></label>
+										<input id="cargoNameField" class="b-fast_request-input_text" type="text" placeholder="500">
+									</div>
+									<div class="b-fast_request-line_big">
+										<div class="b-fast_request-line_mini parent">
+											<label for="" class="b-fast_request-label">Готовность груза к отправке<span>*</span></label>
+											<div class="b-datepicker">
+												<span id="icon_datepicker" class="b-icon_datepicker"></span>
+												<input id="datepicker" class="b-fast_request-input_text" type="text" placeholder="12.10.2014">
+											</div>
+										</div>
+									</div>
+									<div class="b-fast_request-line_big">
+										<div class="b-fast_request-checkbox">
+											<input id="b-fast_request-checkbox" type="checkbox">
+											<label for="b-fast_request-checkbox">Груз в контейнерах</label>
+										</div>
+									</div>
+									
+
+									<!-- Груз в контейнере (начало) -->
+									<div class="b-cargo_in_container-form hidden">
+										<div class="b-fast_request-line_big">
+											<div class="b-fast_request-line_mini">
+												<label for="" class="b-fast_request-label">20' (шт)</label>
+												<input class="b-fast_request-input_text" type="text" placeholder="500">
+											</div>
+											<span class="b-from_left_to_right">
+												<span class="b-icon"></span>
+											</span>
+											<div class="b-fast_request-line_mini">
+												<label for="" class="b-fast_request-label">Вес (т)</label>
+												<input class="b-fast_request-input_text" type="text" placeholder="1">
+											</div>
+										</div>
+										<div class="b-fast_request-line_big">
+											<div class="b-fast_request-line_mini">
+												<label for="" class="b-fast_request-label">40' (шт)</label>
+												<input class="b-fast_request-input_text" type="text" placeholder="90">
+											</div>
+											<span class="b-from_left_to_right">
+												<span class="b-icon"></span>
+											</span>
+											<div class="b-fast_request-line_mini">
+												<label for="" class="b-fast_request-label">Вес (т)</label>
+												<input class="b-fast_request-input_text" type="text" placeholder="5">
+											</div>
+										</div>
+									</div>
+									<!-- Груз в контейнере (конец) -->
+									
+
+									<!-- Характеристики груза (начало) -->
+									<div class="b-cargo_specifications-form">
+										<h2>Характеристики груза</h2>
+										<div class="b-fast_request-line_big">
+											<div class="b-fast_request-line_mini">
+												<label for="" class="b-fast_request-label">Общий вес (кг)<span>*</span></label>
+												<input id="totalWeightField" class="b-fast_request-input_text" type="text" placeholder="500">
+											</div>
+											<span class="b-from_left_to_right"></span>
+											<div class="b-fast_request-line_mini">
+												<label for="" class="b-fast_request-label">Количество мест<span>*</span></label>
+												<input class="b-fast_request-input_text" type="text" placeholder="1">
+											</div>
+										</div>
+										<div class="b-fast_request-line_big">
+											<div class="b-fast_request-line_mini">
+												<label for="" class="b-fast_request-label">Общий объем (м3)<span>*</span></label>
+												<input id="totalVolumeField" class="b-fast_request-input_text" type="text" placeholder="90">
+											</div>
+											<span class="b-from_left_to_right">или</span>
+											<div class="b-fast_request-line_mini">
+												<label for="" class="b-fast_request-label">Размеры (м)</label>
+												<input class="b-fast_request-input_text" type="text" placeholder="Ш х В х Д">
+											</div>
+										</div>
+										<div class="b-fast_request-line_big">
+											<div class="b-fast_request-line_mini">
+												<label for="" class="b-fast_request-label">Вес самого крупного места (кг)</label>
+												<input class="b-fast_request-input_text" type="text" placeholder="600">
+											</div>
+											<span class="b-from_left_to_right"></span>
+											<div class="b-fast_request-line_mini">
+												<label for="" class="b-fast_request-label">Размеры самого крупного места (м)</label>
+												<input class="b-fast_request-input_text" type="text" placeholder="Ш х В х Д">
+											</div>
+										</div>
+										<div class="b-fast_request-line_big">
+											<div class="b-fast_request-line_mini">
+												<label for="" class="b-fast_request-label">Тип упаковки груза<span>*</span></label>
+												<select class="width-200">
+													<option value="">Выберите тип</option>
+													<option value="">1</option>
+													<option value="">2</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<!-- Характеристики груза (конец) -->
+
+
+									<!-- Таможенное оформление (начало) -->
+									<div class="b-choky-form hidden">
+										<h2>Таможенное оформление</h2>
+										<div class="b-fast_request-line_big">
+											<label for="" class="b-fast_request-label">Кто производит таможенное оформление?<span>*</span></label>
+											<div class="b-fast_request-checkbox">
+												<input id="b-fast_request-checkbox1" type="checkbox">
+												<label for="b-fast_request-checkbox1">Эстив</label>
+											</div>
+											<div class="b-fast_request-checkbox">
+												<input id="b-fast_request-checkbox2" type="checkbox">
+												<label for="b-fast_request-checkbox2">Самостоятельно</label>
+											</div>
+										</div>
+										<div class="b-fast_request-line_big">
+											<label for="" class="b-fast_request-label">Где производится таможенное оформление?<span>*</span></label>
+											<div class="b-fast_request-checkbox">
+												<input id="b-fast_request-checkbox3" type="checkbox">
+												<label for="b-fast_request-checkbox3">На границе</label>
+											</div>
+											<div class="b-fast_request-checkbox">
+												<input id="b-fast_request-checkbox4" type="checkbox">
+												<label for="b-fast_request-checkbox4">В пункте назначения</label>
+											</div>
+										</div>
+									</div>
+									<!-- Таможенное оформление (конец) -->
+
+
+									<div class="b-fast_request-line_big">
+										<label for="" class="b-fast_request-label">Укажите особенности<span>*</span></label>
+										<textarea class="b-fast_request-textarea"></textarea>
+									</div>
+
+									<div class="b-fast_request-line_big">
+										<button class="b-btn b-btn-blue button gradient b-btn-fast_request">Отправить запрос</button>
+										<div id="submitRequestBtn" class="submit-request-btn">ОТПРАВИТЬ ЗАПРОС</div>
+									</div>
+								</div>
+								<!-- Информация о грузе (конец) -->
+
+							</form>
+						</div>
+
+						<style>
+							.submit-request-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #2c7be5;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.submit-request-btn:hover {
+    background-color: #1a68d1;
+}
+
+.submit-request-btn:active {
+    background-color: #1659b7;
+}
+
+.submit-request-btn.loading {
+    background-color: #7a9ccf;
+    cursor: wait;
+}
+						</style>
+
+					</div>
+					
+				</div>
+			</div>
+			<script src="/js/fast_request.js"></script>
+			<div class="b-right_column-content">
+				<div class="b-myestiw_block">
+					<a href="/"><img src="/images/myestiw-logo.png"></a>
+					<div class="b-myestiw_block-link"><a href="/">Описание</a></div>
+					<div class="b-myestiw_block-link"><a href="/">Регистрация</a></div>
+					<a href="/" class="b-btn b-btn-default b-btn-myestiw_login shadow gradient"><span class="b-glyphicon b-glyphicon-key"></span>Личный кабинет</a>
+				</div>
+				<ul class="b-menu_fast">
+					<li><a href="/">Быстрый запрос</a></li>
+					<li><a href="/">Калькулятор cборных грузов</a></li>
+					<li><a href="/">Профессиональный запрос</a></li>
+					<li><a href="/">Заказать покупку товара</a></li>
+					<li><a href="/">Заказать юридическое сопровождение ВЭД</a></li>
+					<li><a href="/">Договор онлайн</a></li>
+				</ul>
+
+				<div class="b-currency_block">
+					<div class="b-headline">Валюта<span class="b-date">17 июня</span></div>
+					<div class="b-row green">
+						<div class="b-one">USD</div>
+						<div class="b-two">34.56</div>
+						<div class="b-three"><span class="b-icon"></span>0,26</div>
+					</div>
+					<div class="b-row green">
+						<div class="b-one">EUR</div>
+						<div class="b-two">34.56</div>
+						<div class="b-three"><span class="b-icon"></span>0,26</div>
+					</div>
+					<div class="b-row red">
+						<div class="b-one">JPY</div>
+						<div class="b-two">34.56</div>
+						<div class="b-three"><span class="b-icon"></span>0,26</div>
+					</div>
+					<div class="b-row green">
+						<div class="b-one">CNY</div>
+						<div class="b-two">34.56</div>
+						<div class="b-three"><span class="b-icon"></span>0,26</div>
+					</div>
+					<a class="b-link_dynamics">Посмотреть динамику</a>
+				</div>
+
+				<div class="b-footer_icons">
+					<img src="/images/footer_icons/1.png" alt="">
+					<img src="/images/footer_icons/2.png" alt="">
+					<img src="/images/footer_icons/3.png" alt="">
+					<img src="/images/footer_icons/4.png" alt="">
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<nav>
+				<div class="b-footer_block b-footer_block_first">
+					<div class="b-footer_block-link_top">
+						<a href="/">О компании</a>
+					</div>
+					<ul>
+						<li><a href="/">Презентация</a></li>
+						<li><a href="/">Структура</a></li>
+						<li><a href="/">Документы</a></li>
+						<li><a href="/">Реквизиты</a></li>
+						<li><a href="/">Отзывы</a></li>
+						<li><a href="/">Вакансии</a></li>
+					</ul>
+				</div>
+				<div class="b-footer_block">
+					<div class="b-footer_block-link_top">
+						<a href="/">Услуги</a>
+					</div>
+					<ul>
+						<li><a href="/">Организация перевозок</a></li>
+						<li><a href="/">Поиск и поставка товара</a></li>
+						<li><a href="/">Планирование поставок</a></li>
+						<li><a href="/">Таможенное оформление</a></li>
+						<li><a href="/">Консультации по ВЭД</a></li>
+						<li><a href="/">Типовые документы</a></li>
+					</ul>
+				</div>
+				<div class="b-footer_block">
+					<div class="b-footer_block-link_top">
+						<a href="/">My estiw</a>
+					</div>
+					<ul>
+						<li><a href="/">О системе</a></li>
+						<li><a href="/">Руководство</a></li>
+						<li><a href="/">Онлайн демонстрация</a></li>
+						<li><a href="/">Поддержка</a></li>
+						<li><a href="/">Регистрация</a></li>
+					</ul>
+				</div>
+				<div class="b-footer_block">
+					<div class="b-footer_block-link_top">
+						<a href="/">Проекты</a>
+					</div>
+					<div class="b-footer_block-link_top">
+						<a href="/">Новости</a>
+					</div>
+					<div class="b-footer_block-link_top">
+						<a href="/">Справочник</a>
+					</div>
+					<div class="b-footer_block-link_top">
+						<a href="/">Партнерам</a>
+					</div>
+				</div>
+				<div class="b-footer_block b-footer_block_last">
+					<div class="b-footer_phone">
+						<span>Бесплатный звонок по РФ</span>
+						<a href="tel:8 (800) 234 0 234">8 (800) 234 0 234</a>
+					</div>
+					<div class="b-footer_block-link_top">
+						<a href="/">Контактная информация</a>
+					</div>
+					<div class="b-footer_block-searchform">
+						<span class="b-search_icon"></span>
+						<form method="GET" action="#">
+							<input type="text">
+						</form>
+					</div>
+				</div>
+			</nav>
+		</footer>
+
+	</section>
+
+	<!-- Заказать обратный звонок -->
+	<div id="b-callback-popup" style="display: none;">
+		<div class="b-callback-popup_form">
+			<div class="b-left gradient">
+				<h2>Появились вопросы?</h2>
+				<span class="b-phone">Звоните прямо сейчас <br/><a href="tel:88002340234">8 (800) 234 0 234</a></span>
+				<span class="b-mail">или оставьте заявку на e-mail <br/><a href="mailto:estiw@estiw.ru">estiw@estiw.ru</a></span>
+			</div>
+			<div class="b-right">
+				<h2>Вам перезвонить?</h2>
+				<form name="message" method="post" action="/message/new" novalidate="novalidate">
+					<label for="b-callback-name">Как к вам обратиться?</label>
+					<input id="b-callback-name" type="text" class="b-input-name" placeholder="Ваше имя" />
+
+					<label for="b-callback-countries">Страна</label>
+					<select id="b-callback-countries" class="width-245">
+						<option>Выберите страну</option>
+						<option>Россия</option>
+						<option>США</option>
+						<option>Китай</option>
+						<option>Австралия</option>
+					</select>
+
+					<label for="b-callback-towns">Город</label>
+					<select id="b-callback-towns" class="width-245">
+						<option>Выберите город</option>
+						<option>Владивосток</option>
+						<option>Пекин</option>
+						<option>Новосибирск</option>
+						<option>Москва</option>
+						<option>Киев</option>
+						<option>Иркутск</option>
+						<option>Сингапур</option>
+						<option>Токио</option>
+						<option>Сидней</option>
+						<option>Лондон</option>
+						<option>Нью-Йорк</option>
+						<option>Амстердам</option>
+						<option>Дубай</option>
+						<option>Рио-де-Жанейро</option>
+						<option>Петропавловск-Камчатский</option>
+						<option>Лос-Анджелес</option>
+						<option>Мехико</option>
+					</select>
+
+					<label for="b-callback-town_code">Телефон <span class="necessarily">*</span></label>
+					<div class="b-input_phone">
+						<input class="b-input_phone-country_code" type="text" placeholder="+7">
+						<input class="b-input_phone-town_code" type="text" id="b-callback-town_code" placeholder="_ _ _ ">
+						<input class="b-input_phone-number error" type="text" placeholder="_ _ _ -_ _ -_ _ ">
+					</div>
+
+					<button class="button b-btn b-btn-blue b-btn-callback_popup" type="submit">Заказать звонок</button>
+				</form>
+			</div>
+		</div>
+		<div class="b-callback-popup_success" style="display: none;">
+			<div class="b-left">
+				<img src="/images/callback-popup_success-mail.png" alt="">
+			</div>
+			<div class="b-right">
+				<h1>Ваша заявка успешно отправлена</h1>
+				<h2>Спасибо за интерес к нашей компании. В ближайшее время <br/>наши специалисты Вам перезвонят и проконсультируют <br/>по всем вопросам.</h2>
+			</div>
+		</div>
+	</div>
+
+	<!-- Выбор города -->
+	<div id="b-town_choose" style="display: none;">
+		<div class="b-town_choose-popup">
+			<div class="b-town_choose-headline gradient">
+				<h1>Пожалуйста, выберите свой часовой пояс</h1>
+			</div>
+			<ul>
+				<li><a class="b-bold active">Владивосток</a></li>
+				<li><a>Пекин</a></li>
+				<li><a>Новосибирск</a></li>
+				<li><a class="b-bold">Москва</a></li>
+				<li><a>Киев</a></li>
+				<li><a>Иркутск</a></li>
+				<li><a>Сингапур</a></li>
+				<li><a>Токио</a></li>
+				<li><a>Сидней</a></li>
+				<li><a>Лондон</a></li>
+				<li><a>Нью-Йорк</a></li>
+				<li><a>Амстердам</a></li>
+				<li><a>Дубай</a></li>
+				<li><a>Рио-де-Жанейро</a></li>
+				<li><a>Петропавловск-Камчатский</a></li>
+				<li><a>Лос-Анджелес</a></li>
+				<li><a>Мехико</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<link rel="stylesheet" href="/js/fancybox/source/jquery.fancybox.css"  media="screen" />
+	<script type="text/javascript" src="/js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script type="text/javascript" src="/js/fancybox/source/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $(".fancybox").fancybox({
+		        closeBtn: true
+		    });
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#b-fast_request-checkbox').on('change', function() {
+				if($('#b-fast_request-checkbox-styler').hasClass('checked')){
+					$(".b-cargo_in_container-form").removeClass('hidden');
+					$(".b-cargo_specifications-form").addClass('hidden');
+				}
+				else{
+					$(".b-cargo_in_container-form").addClass('hidden');
+					$(".b-cargo_specifications-form").removeClass('hidden');
+				}
+				return false;
+			});
+			$('.width-200').change(function() {
+				$(".b-choky-form").removeClass('hidden');
+			});
+		});
+	</script>
+
+	<!-- pickaday calendar -->
+	<link href="js/pickaday/css/pikaday.css" rel="stylesheet" type="text/css" />
+	<script src="js/pickaday/moment.js"></script>
+	<script src="js/pickaday/pikaday.js"></script>
+	<script>
+		var picker = new Pikaday({
+		    field: document.getElementById('datepicker'),
+		    format: 'DD.MM.YYYY',
+		    position: 'bottom left',
+		    trigger: document.getElementById('icon_datepicker'),
+		    i18n:{
+				previousMonth : 'Прошлый месяц',
+				nextMonth     : 'След месяц',
+				months        : ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+				weekdays      : ['Воскресенье','Понедельник','Втроник','Среда','Четверг','Пятница','Суббота'],
+				weekdaysShort : ['Вс','Пн','Вт','Ср','Чт','Пт','Сб']
+			}
+		});
+	</script>
+	<!-- menu hover effect -->
+	<script type="text/javascript" src="/js/hover_menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+﻿// Оформление для просмотра сохранённых форм
+.b-form_area{
+	width: 860px;
+	margin: 0px 0px 150px 25px;
+	padding: 0px;
+	position: relative;
+
+	& .b-form_content{
+		width: 772px;
+		//float: left;
+		margin: 0px auto;
+		padding: 0px;
+		position: relative;
+
+		& .b-form_body{
+			width: 750px;
+			height: auto;
+			position: relative;
+			margin: 25px 0px 0px 0px;
+			padding: 10px;
+			//float: left;
+			border: 1px dashed #dddddd;
+			background: rgb(255,255,255);
+			background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIxJSIgc3RvcC1jb2xvcj0iI2Y0ZjRmNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+			background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(244,244,244,1) 21%);
+			background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(21%,rgba(244,244,244,1)));
+			background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 21%);
+			background: -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 21%);
+			background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 21%);
+			background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 21%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=1 );
+
+			&:before{
+				content: "";
+				position: absolute;
+				height: 139px;
+				width: 13px;
+				top: 3px;
+				right: -14px;
+				background: url('@{images}/shadows/shadow-top_right.png');
+			}
+			&:after{
+				content: "";
+				position: absolute;
+				bottom: -10px;
+				height: 9px;
+				width: 736px;
+				left: 20px;
+				background: url('@{images}/shadows/shadow-project_page-text.png');
+			}
+
+			& .r-row{
+				margin: 3px 0;
+
+				& label{
+					color:#007bc6;
+				}
+
+				& .r-value {
+					margin: 0 0 0 10px;
+				}
+			}
+
+		}
+	}
+}

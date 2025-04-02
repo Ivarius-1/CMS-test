@@ -1,0 +1,132 @@
+/* Background */
+
+.rsIndex,
+.rsIndex .rsOverflow,
+.rsIndex .rsSlide,
+.rsIndex .rsVideoFrameHolder,
+.rsIndex .rsThumbs {
+	color: #FFF;
+}
+
+/***************
+*
+*  1. Arrows
+*
+****************/
+
+#b-index_slider-prev{
+	width: 17px;
+	height: 35px;
+	position: absolute;
+	cursor: pointer;	
+	background: url('thumbs-arrows.png') no-repeat;
+	background-position: 0px 0px;
+	bottom: 18px; 
+	left: 17px;
+	z-index: 99;
+}
+#b-index_slider-prev:hover{
+	background-position: 0px -36px;
+}
+#b-index_slider-next{
+	width: 17px;
+	height: 35px;
+	position: absolute;
+	cursor: pointer;	
+	background: url('thumbs-arrows.png') no-repeat;
+	background-position: -18px 0px;
+	bottom: 18px; 
+	right: 17px;
+	z-index: 99;
+}
+#b-index_slider-next:hover{
+	background-position: -18px -36px;
+}
+
+/***************
+*
+*  2. Thumbnails
+*
+****************/
+
+.rsIndex .rsThumbsHor {
+	width: 820px;
+	height: 42px;
+	margin: 0px 0px 0px 50px;
+	padding: 0px 0px 8px;
+	cursor: default;
+}
+.rsIndex.rsWithThumbsHor .rsThumbsContainer {
+	position: relative;
+	height: 110%;
+}
+.rsIndex .rsThumb {
+	float: left;
+	overflow: hidden;
+	width: 160px;
+	height: auto;
+	margin: 0px;
+	padding: 8px;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+.rsIndex .rsThumb.rsNavSelected{
+	border: 1px dashed #007bc6;
+	cursor: default;
+}
+.rsIndex .rsThumb.rsNavSelected .rsTmb,
+.rsIndex .rsThumb.rsNavSelected:hover .rsTmb{
+	color: #000000;
+	text-decoration: none;
+}
+.rsIndex .rsThumb:hover .rsTmb{
+	color: #007bc6;
+}
+.rsIndex .rsTmb{
+	display: block;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16px;
+	color: #acacac;
+	text-align: center;
+	text-decoration: underline;
+}
+
+
+/***************
+*
+*  3. Preloader
+*
+****************/
+
+.rsIndex .rsPreloader {
+	width: 20px;
+	height: 20px;
+
+	left: 50%;
+	top: 50%;
+	margin-left: -10px;
+	margin-top: -10px;
+	background: url('preloader-white.gif') no-repeat;
+}
+
+/***************
+*
+*  4. Global caption
+*
+****************/
+.rsIndex .rsGCaption {
+	position: absolute;
+	float: none;
+	bottom: 6px;
+	left: 6px;
+	text-align: left;
+
+
+	color: #FFF;
+	padding: 2px 8px;
+	width: auto;
+	font-size: 12px;
+	border-radius: 2px;
+}
