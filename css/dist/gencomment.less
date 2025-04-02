@@ -1,0 +1,174 @@
+﻿.j-comment-area{
+	float:left;
+	width:800px;
+	margin: 20px 60px 20px 60px;
+	position:relative;
+	font-family: @font;
+
+	&>.j-comment_head{
+		width: 100%;
+		height: auto;
+		margin: 10px 0px 0px 0px;
+		padding: 10px 0 10px 0;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 30px;
+		text-align: left;
+		color: #000000;
+		border-bottom: 1px dashed #E7E6E6;
+	}
+
+	&>.j-comment_block{
+		width:730px;
+		margin: 10px auto 20px auto;
+		position:relative;
+
+		&>.j-comment_form{
+			position:relative;
+
+			& .j-comment_line{
+				width: 730px;
+				height: auto;
+				margin: 10px 0 0;
+				padding: 0;
+				position: relative;
+
+				&>input.j-comment_input_text{
+					height: 20px;
+					margin: 0 0 5px 0;
+					padding: 5px 10px;
+					border: 1px solid #e6e6e6;
+					background: #fff;
+					position: relative;
+					outline: none;
+					font-size: 12px;
+					font-weight: 400;
+					line-height: 20px;
+					color: #000;
+					text-align: left;
+					border-radius: 5px;
+				}
+				&>input.j-comment_name{
+					width: 250px;
+				}
+				&>input.j-comment_captcha{
+					width:150px;
+					margin-left: 20px;
+				}
+
+				&>textarea.j-comment_textarea{
+					height: 58px;
+					margin: 0 0 5px 0;
+					padding: 5px 10px;
+					border: 1px solid #e6e6e6;
+					background: #fff;
+					position: relative;
+					outline: none;
+					font-size: 12px;
+					font-weight: 400;
+					line-height: 20px;
+					color: #000;
+					text-align: left;
+					border-radius: 5px;
+					resize: none;
+				}
+
+				&>textarea.j-comment_com{
+					width:704px;
+					border: 3px solid #FFC000;
+				}
+
+				&>input:focus, &>textarea:focus{
+					border-color: #00A9FF;
+				}
+
+				&>button.j-comment_button{
+					float:none;
+					width: 150px;
+					margin: 10px 0 10px 0;
+					line-height: 13px;
+				}
+				&.j-comment_line-right{
+					text-align:right;
+				}
+				&.j-comment_line-captcha{
+					float:left;
+					width:400px;
+					z-index: 99;
+				}
+
+				&>.j-comment_captcha-img{
+					margin: 0 10px 0 20px;
+					vertical-align: middle;
+				}
+				&>.j-comment_captcha_reset{
+					display: inline-block;
+					width: 21px;
+					height: 21px;
+					margin: 0px 15px -6px;
+					padding: 0px;
+					position: relative;
+					background: url('@{images}/icon-captcha_reset.png') 0px 0px no-repeat;
+					cursor:pointer;
+					transform: rotate();
+					
+					&:hover{
+						background-position: 0px -22px;
+					}
+
+					&.active{
+						background-position: 0px -22px;
+						.rotation(360deg);
+						.transition(0.5s, ease-out);
+					}
+				}
+			}
+		}
+
+		&>.j-comment_list{
+			margin: 10px 0 0 0;
+			position: relative;
+
+			&>.j-comment_comment{
+				margin: 15px 0 0 0;
+				position: relative;
+				border-bottom:1px dashed #E7E6E6;
+				font-size: 12px;
+				font-weight: 400;
+				line-height: 16px;
+				color: #000;
+				text-align: left;
+
+				&>.j-comment_userdate{
+					margin: 0 0 10px 0;
+					position: relative;
+
+					&>.j-comment_date{
+						margin: 0 0 0 20px;
+						font-size:8px;
+						color:#A7A7A7;
+					}
+				}
+
+				&>.j-comment_text{
+					margin-bottom:15px;
+
+					&>.j-comment_text-label{
+						font-weight: 700;
+						margin: 0;
+					}
+					&>.j-comment_text-t{
+						margin: 0;
+					}
+				}
+
+				&:last-child{
+					border-bottom: none;
+				}
+			}
+			&>.b-btn-show_all_news{
+				margin-left: 20px;
+			}
+		}
+	}
+}

@@ -1,0 +1,61 @@
+﻿.j-lecture_page{
+	width:730px;
+	margin: 40px auto 20px auto;
+	position:relative;
+	font-family: @font;
+
+	&>.j-lecture_img{
+		float: left;
+		margin:10px 0 0 0;
+		text-align: center;
+		vertical-align: middle;
+		width:730px;
+		min-height: 250px;
+		height: 250px;
+		overflow: hidden;
+		position: relative;
+
+		&>img{
+			max-width:730px;
+			vertical-align:middle;
+		}
+	}
+
+	&>.j-lecture_title{
+		float: left;
+		width: 100%;
+		height: auto;
+		margin: 10px 0px 0px 0px;
+		padding: 0px;
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 30px;
+		text-align: left;
+		color: #000000;
+	}
+
+	&>.j-lecture_content{
+		float: left;
+		padding: 0 10px;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 20px;
+		color: #000;
+		
+		& a.j-lecture_nav{
+			text-decoration: underline;
+			color: #7F7F7F;
+
+			&:hover{
+				text-decoration: none;
+			}
+		}
+
+		& p{
+			margin-bottom: 15px;
+			text-align: justify;
+			text-align-last: left;
+			-moz-text-align-last: left;
+		}
+	}
+}

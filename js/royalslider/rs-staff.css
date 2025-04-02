@@ -1,0 +1,132 @@
+/* Background */
+
+.rsStaff,
+.rsStaff .rsOverflow,
+.rsStaff .rsSlide,
+.rsStaff .rsVideoFrameHolder,
+.rsStaff .rsThumbs {
+	color: #FFF;
+}
+
+/***************
+*
+*  1. Arrows
+*
+****************/
+
+#b-leadership_slider-prev{
+	width: 17px;
+	height: 35px;
+	position: absolute;
+	cursor: pointer;	
+	background: url('thumbs-arrows.png') no-repeat;
+	background-position: 0px 0px;
+	bottom: 22px; 
+	left: 10px;
+	z-index: 99;
+}
+#b-leadership_slider-prev:hover{
+	background-position: 0px -36px;
+}
+#b-leadership_slider-next{
+	width: 17px;
+	height: 35px;
+	position: absolute;
+	cursor: pointer;	
+	background: url('thumbs-arrows.png') no-repeat;
+	background-position: -18px 0px;
+	bottom: 22px; 
+	right: 15px;
+	z-index: 99;
+}
+#b-leadership_slider-next:hover{
+	background-position: -18px -36px;
+}
+
+/***************
+*
+*  2. Thumbnails
+*
+****************/
+
+.rsStaff .rsThumbsHor {
+	width: 800px;
+	height: 42px;
+	margin: 0px 0px 0px 15px;
+	padding: 0px 0px 8px;
+	cursor: default;
+}
+.rsStaff.rsWithThumbsHor .rsThumbsContainer {
+	position: relative;
+	height: 110%;
+}
+.rsStaff .rsThumb {
+	float: left;
+	overflow: hidden;
+	width: 140px;
+	height: auto;
+	margin: 0px;
+	padding: 5px 3px;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+.rsStaff .rsThumb.rsNavSelected{
+	border: 1px dashed #007bc6;
+	cursor: default;
+}
+.rsStaff .rsThumb.rsNavSelected .rsTmb,
+.rsStaff .rsThumb.rsNavSelected:hover .rsTmb{
+	color: #000000;
+	text-decoration: none;
+}
+.rsStaff .rsThumb:hover .rsTmb{
+	color: #007bc6;
+}
+.rsStaff .rsTmb{
+	display: block;
+	font-family: Arial, sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 16px;
+	color: #acacac;
+	text-align: center;
+	text-decoration: underline;
+}
+
+
+/***************
+*
+*  3. Preloader
+*
+****************/
+
+.rsStaff .rsPreloader {
+	width: 20px;
+	height: 20px;
+
+	left: 50%;
+	top: 50%;
+	margin-left: -10px;
+	margin-top: -10px;
+	background: url('preloader-white.gif') no-repeat;
+}
+
+/***************
+*
+*  4. Global caption
+*
+****************/
+.rsStaff .rsGCaption {
+	position: absolute;
+	float: none;
+	bottom: 6px;
+	left: 6px;
+	text-align: left;
+
+
+	color: #FFF;
+	padding: 2px 8px;
+	width: auto;
+	font-size: 12px;
+	border-radius: 2px;
+}
