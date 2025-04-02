@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', async () => {
   try {
-    const response = await fetch('/api/news'); // Исправленный endpoint
+    const response = await fetch('/api/news'); 
     const news = await response.json();
 
     const container = document.getElementById('news-container');
-    
-    // Создаем базовую структуру
+
     const today = new Date().toLocaleDateString('ru-RU', {
       day: 'numeric',
       month: 'long'
@@ -19,38 +18,36 @@ document.addEventListener('DOMContentLoaded', async () => {
     `;
 
     function formatDatabaseDate(dbValue) {
-      // 1. Если значение уже в нужном формате "24 апреля"
+      
       if (typeof dbValue === 'string' && /^\d{1,2}\s(января|февраля|марта|апреля|мая|июня|июля|августа|сентября|октября|ноября|декабря)$/.test(dbValue)) {
-        return dbValue; // Возвращаем как есть
+        return dbValue; 
       }
     
-      // 2. Проверка на пустые значения
+
       if (!dbValue || dbValue === 'null' || dbValue === 'undefined') {
         return 'Дата не указана';
       }
     
-      // 3. Парсинг исходных дат из БД
+
       let date;
       
       try {
-        // Если это timestamp или ISO строка
+
         if (typeof dbValue === 'number' || (typeof dbValue === 'string' && /^\d{4}-\d{2}-\d{2}/.test(dbValue))) {
           date = new Date(dbValue);
         } 
-        // Если это уже Date объект
+
         else if (dbValue instanceof Date) {
           date = dbValue;
         }
-        // Если это строка с нераспознаваемой датой
+
         else {
           console.error('Невозможно распознать дату:', dbValue);
           return 'Некорректная дата';
         }
-    
-        // Проверка валидности
+
         if (isNaN(date.getTime())) throw new Error('Invalid date');
-    
-        // Форматирование
+
         const months = [
           'января', 'февраля', 'марта', 'апреля',
           'мая', 'июня', 'июля', 'августа',
@@ -77,7 +74,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       `;
     });
 
-    // Добавляем ссылку "Все новости"
+
     html += `<a href="/" class="b-link_allnews">Посмотреть все новости</a>`;
 
     container.innerHTML = html;

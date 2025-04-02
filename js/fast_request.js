@@ -4,7 +4,7 @@ document.getElementById('submitRequestBtn').addEventListener('click', async func
   const totalWeight = document.getElementById('totalWeightField')?.value.trim();
   const totalVolume = document.getElementById('totalVolumeField')?.value.trim();
 
-  // Валидация
+
   if (!cargoName || !totalWeight || !totalVolume) {
       alert('Заполните все обязательные поля!');
       return;
@@ -27,7 +27,7 @@ document.getElementById('submitRequestBtn').addEventListener('click', async func
           })
       });
 
-      // Проверяем Content-Type
+
       const contentType = response.headers.get('content-type');
       if (!contentType || !contentType.includes('application/json')) {
           const text = await response.text();
